@@ -1,0 +1,17 @@
+ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 2rem;
+    align-items: center;
+    min-height: 75vh;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    padding: 30px 50px;
+    background-color: bisque;
+    border: 1px solid black;
+    border-radius: 5px;
+}
