@@ -13,9 +13,9 @@ Live: https://glore81.github.io/Web-dev4
 ## Technologies Used
 * HTML5
 * CSS3
-* JavaScript
+* JavaScript Bootstrap
 
 ## How to Run
 1. Clone the repository or download the project files.
-2. Ensure `index.html`, `style.css`, and `script.js` are located in the same directory.
+2. Ensure `index.html`, `style.css` are located in the same directory.
 3. Open `index.html` in any modern web browser. No local server or build tools are required.
