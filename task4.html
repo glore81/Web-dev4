@@ -7,7 +7,109 @@
     <link rel="stylesheet" href="style.css">
     <title>Task 4</title>
 </head>
-<body>
-    
+<body class="d-flex justify-content-center align-items-center vh-100 bg-light">
+    <div class="card p-4 shadow-sm" style="width: 100%; max-width: 40%;">
+        <h3 class="text-center mb-4">Registration Form</h3>
+        <form action="#" method="post" class="needs-validation" novalidate>
+            <div class="row">
+                <div class="mb-3 col-6">
+                    <label for="username" class="form-label fw-bold" >Name</label>
+                    <input type="text" placeholder="Input name" class="form-control" name="username" id="username" required>
+                    <div class="valid-feedback">Looks good!</div>
+                    <div class="invalid-feedback">Please enter your name.</div>
+                </div>
+
+                <div class="mb-3 col-6">
+                    <label for="usersurname" class="form-label fw-bold" >Surname</label>
+                    <input type="text" placeholder="Input surname" class="form-control" name="usersurname" id="usersurname" required>
+                    <div class="valid-feedback">Looks good!</div>
+                    <div class="invalid-feedback">Please enter your surname.</div>
+                </div>
+            </div>
+
+
+            <div class="mb-3">
+                <label for="email" class="form-label fw-bold">Email</label>
+                <input type="email" placeholder="Input email" class="form-control" name="email" id="email" aria-describedby="emailHelp" required >
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please enter your email.</div>
+            </div>
+
+
+            <div class="row">
+                <div class="mb-3 col-6">
+                    <label for="password" class="form-label fw-bold" >Password</label>
+                    <input type="password" placeholder="Create password" class="form-control" name="password" id="password" minlength="8" required>
+                    <div class="valid-feedback">Looks good!</div>
+                    <div class="invalid-feedback">Password must be at least 8 characters.</div>
+                </div>
+                <div class="mb-3 col-6">
+                    <label for="confpassword" class="form-label fw-bold" >Confirm Password</label>
+                    <input type="password" placeholder="Repeat password" class="form-control" name="confirmpassword" id="confpassword" minlength="8" required>
+                    <div class="valid-feedback">Looks good!</div>
+                    <div class="invalid-feedback">Please confirm your password.</div>
+                </div>
+            </div>
+
+
+            <div class="mb-3">
+                <label class="form-label fw-bold d-block" >Gender</label>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="gender" id="male" value="male" required>
+                    <label class="form-check-label" for="male">Male</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="gender" id="female" value="female" required>
+                    <label class="form-check-label" for="female">Female</label>
+                </div>
+            </div>
+
+
+            <div class="mb-3">
+                <label class="form-label fw-bold d-block">Hobbies</label>
+                <div class="form-check form-check-inline">
+                    <input type="checkbox" class="form-check-input" id="coding" name="hobbie" value="coding">
+                    <label for="coding" class="form-check-label">Coding</label>
+                </div>
+
+                <div class="form-check form-check-inline">
+                    <input type="checkbox" class="form-check-input" id="guitar" name="hobbie" value="guitar">
+                    <label for="guitar" class="form-check-label">Guitar</label>
+                </div>
+
+                <div class="form-check form-check-inline">
+                    <input type="checkbox" class="form-check-input" id="basketball" name="hobbie" value="basketball">
+                    <label for="basketball" class="form-check-label">Basketball</label>
+                </div>
+            </div>
+
+
+            <div class="mb-3">
+                <label for="country" class="form-label fw-bold">Country</label>
+                <select class="form-select" name="country" id="country" required>
+                    <option selected disabled value="">Choose your country...</option>
+                    <option value="kz">Kazakhstan</option>
+                    <option value="uk">United Kingdom</option>
+                    <option value="ru">Russia</option>
+                </select>
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please choose country.</div>
+            </div>
+
+
+            <div class="mb-4 form-check">
+                <input type="checkbox" class="form-check-input" id="terms" name="terms" required>
+                <label for="terms" class="form-check-label">I agree to the Terms and Conditions</label>
+                <div class="invalid-feedback">You must agree before registering.</div>
+            </div>
+
+            <div class="d-flex gap-3">
+                <button type="submit" class="btn btn-primary w-50">Register</button>
+                <button type="reset" class="btn btn-dark w-50">Reset</button>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
