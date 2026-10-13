@@ -7,19 +7,19 @@
     <link rel="stylesheet" href="style.css">
     <title>Task 4</title>
 </head>
-<body class="d-flex justify-content-center align-items-center vh-100 bg-light">
-    <div class="card p-4 shadow-sm" style="width: 100%; max-width: 40%;">
+<body class="d-flex justify-content-center align-items-center min-vh-100 bg-light">
+    <div class="card p-3 shadow-sm" style="width: 100%; max-width: 40%;">
         <h3 class="text-center mb-4">Registration Form</h3>
         <form class="was-validated" novalidate>
             <div class="row">
-                <div class="mb-3 col-6">
+                <div class="mb-3 col-md-6">
                     <label for="username" class="form-label fw-bold" >Name</label>
                     <input type="text" placeholder="Input name" class="form-control" name="username" id="username" required>
                     <div class="valid-feedback">Looks good!</div>
                     <div class="invalid-feedback">Please enter your name.</div>
                 </div>
 
-                <div class="mb-3 col-6">
+                <div class="mb-3 col-md-6">
                     <label for="usersurname" class="form-label fw-bold" >Surname</label>
                     <input type="text" placeholder="Input surname" class="form-control" name="usersurname" id="usersurname" required>
                     <div class="valid-feedback">Looks good!</div>
@@ -38,13 +38,13 @@
 
 
             <div class="row">
-                <div class="mb-3 col-6">
+                <div class="mb-3 col-md-6">
                     <label for="password" class="form-label fw-bold" >Password</label>
                     <input type="password" placeholder="Create password" class="form-control" name="password" id="password" minlength="8" required>
                     <div class="valid-feedback">Looks good!</div>
                     <div class="invalid-feedback">Password must be at least 8 characters.</div>
                 </div>
-                <div class="mb-3 col-6">
+                <div class="mb-3 col-md-6">
                     <label for="confpassword" class="form-label fw-bold" >Confirm Password</label>
                     <input type="password" placeholder="Repeat password" class="form-control" name="confirmpassword" id="confpassword" minlength="8" required>
                     <div class="valid-feedback">Looks good!</div>
@@ -98,7 +98,7 @@
             </div>
 
 
-            <div class="mb-4 form-check">
+            <div class="mb-3 form-check">
                 <input type="checkbox" class="form-check-input" id="terms" name="terms" required>
                 <label for="terms" class="form-check-label">I agree to the Terms and Conditions</label>
                 <div class="invalid-feedback">You must agree before registering.</div>
